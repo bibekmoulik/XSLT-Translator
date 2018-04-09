@@ -9,8 +9,8 @@
       </v1:ServiceRequestInfo>
       <oas:Security>
          <oas:UsernameToken>
-            <oas:Username>CNIADSrvcsID_D</oas:Username>
-            <oas:Password>metlife1</oas:Password>
+            <oas:Username>sample_UserName</oas:Username>
+            <oas:Password>sample_Password</oas:Password>
          </oas:UsernameToken>
       </oas:Security>
    </soapenv:Header>
