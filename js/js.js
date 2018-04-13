@@ -386,18 +386,3 @@ function makeLinearXML(textAreaId)
 	document.getElementById(textAreaId).value = formatXmlWithoutErr(formatXml(rawXmlData,docType)).replace(/>\s*</g,"><");
 }
 
-$(document).ready(function()
-{
-	$("#increment").on('click',function()
-	{
-		$("#indentBox").val(parseInt($("#indentBox").val())+1);
-	});
-
-	$("#decrement").on('click',function()
-	{
-		if($("#indentBox").val() > 0)
-		{
-			$("#indentBox").val(parseInt($("#indentBox").val())-1);
-		}
-	});
-});
