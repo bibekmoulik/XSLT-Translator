@@ -83,8 +83,8 @@ function transform()
 				var xsltProcessor=new XSLTProcessor();
 				xsltProcessor.importStylesheet(xsltData);
 				var resultDocument = xsltProcessor.transformToDocument(inputXml);
-				xsltProcessor.showWarnings(true);
-				xsltProcessor.setErrorStream(System.err);
+				//xsltProcessor.showWarnings(true);
+				//xsltProcessor.setErrorStream(System.err);
 				if(resultDocument == null)
 				{
 					alert("---------------\nWrong XSLT :\n---------------\nCannot Transform the Input XML");
