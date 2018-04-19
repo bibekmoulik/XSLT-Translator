@@ -382,7 +382,10 @@ function makeLinearXML(textAreaId)
 	{
 		docType = 'XML';
 	}
-
-	document.getElementById(textAreaId).value = formatXmlWithoutErr(formatXml(rawXmlData,docType)).replace(/>\s*</g,"><");
+	
+	if (xmlParsing(rawXmlData, docType))
+	{
+		document.getElementById(textAreaId).value = formatXmlWithoutErr(formatXml(rawXmlData,docType)).replace(/>\s*</g,"><");
+	}
 }
 
